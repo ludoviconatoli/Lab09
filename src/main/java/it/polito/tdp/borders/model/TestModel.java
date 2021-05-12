@@ -1,5 +1,8 @@
 package it.polito.tdp.borders.model;
 
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultEdge;
+
 public class TestModel {
 
 	public static void main(String[] args) {
@@ -7,7 +10,10 @@ public class TestModel {
 		Model model = new Model();
 
 		System.out.println("TestModel -- TODO");
+		Graph<Country, DefaultEdge> grafo = model.creaGrafo(1980);
 		
+		//for(Country c: grafo.vertexSet())
+		//	System.out.println(c);
 //		System.out.println("Creo il grafo relativo al 2000");
 //		model.createGraph(2000);
 		
